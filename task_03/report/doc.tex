@@ -1,0 +1,61 @@
+\documentclass[a4paper, 11pt]{article}
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[main = russian, english]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{indentfirst}
+
+% Красивый внешний вид теорем, определений и доказательств
+\usepackage{amsthm}
+
+
+\newenvironment{compactlist}{
+        \begin{list}{{$\bullet$}}{
+                        \setlength\partopsep{0pt}
+                        \setlength\parskip{0pt}
+                        \setlength\parsep{0pt}
+                        \setlength\topsep{0pt}
+                        \setlength\itemsep{0pt}
+                }
+        }{
+        \end{list}
+}
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}
+
+\theoremstyle{plane}
+\newtheorem{theorem}{Теорема}
+\newtheorem{assertion}{Утверждение}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}
+
+\renewcommand*{\proofname}{Доказательство}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\DeclareMathOperator{\sgn}{sgn}
+
+\begin{document}
+        \include{title_page/doc}
+
+        \tableofcontents
+        \clearpage
+        
+        \include{formulation_of_the_problem/doc}
+        \include{research_of_the_system/doc}
+
+        \begin{thebibliography}{9}
+                \bibitem{pontryagin83} Л.~С.~Понтрягин, В.~Г.~Болтянский, Р.~В.~Гамрелидзе, Е.~Ф.~Мищенко. Математическая теория оптимальных процеccов. М.: Наука, 1983.
+                \bibitem{li72} Э.~Б.~Ли, Л.~Маркус. Основы теории оптимального управления. М: Наука, 1972.
+        \end{thebibliography} 
+\end{document}
