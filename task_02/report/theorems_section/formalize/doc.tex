@@ -1,0 +1,50 @@
+\subsection{Формализация задачи}
+
+Перепишем рассматриваемое дифференциальное уравнение (\ref{eq:main_equation}) в виде системы, построим для нее расширенную функцию Гамильтона--Понтрягина, а также сопряженную систему:
+
+\begin{equation} \label{eq:main_system}
+        \left\{
+        \begin{aligned}
+                \dot x_1 &= x_2 \\
+                \dot x_2 &= u_1 - x_2(1 + u_2).
+        \end{aligned}
+        \right.
+\end{equation}
+
+\begin{equation} \label{eq:hamilton_function}
+        \hat H (\hat\psi,\: \hat x,\: u) = \psi_0\cdot(u_1^2 + \alpha |u_1|) + \psi_1\cdot x_2 + \psi_2\cdot(u_1 - x_2(1 + u_2)) \mbox{, где $\psi_0 \leqslant 0.$}
+\end{equation} 
+        
+\begin{equation}\label{eq:auxiliary_system}
+        \left\{
+        \begin{aligned}
+                &\dot\psi_1 = 0\\
+                &\dot\psi_2 = \psi_1 + \psi_2(1 + u_2).
+        \end{aligned}
+        \right.
+\end{equation}
+
+\begin{remark}
+        Из принципа максимума следует, что для любой оптимальной траектории системы~(\ref{eq:main_system}) $\psi_1(t) \equiv \psi_1^0 \equiv \const$.
+\end{remark}
+
+\begin{remark}
+        Покажем, что задача разрешима только при условии, что $\psi_0 < 0$. Пусть $\psi_0 = 0$, тогда задача максимизации функции Гамильтона--Понтрягина (\ref{eq:hamilton_function}) эквивалентна следующей:
+        $$
+                \psi_2(u_1 - x_2(1 + u_2)) \to \max\limits_{u \in \Delta}
+        $$
+        В случае заданных первых ограничений на управление (когда $u_1 \geqslant 0$) требуется положить $\psi_2 \leqslant 0$, так как в противном случае максимум не достигается. При таком допущении максимум будет достигнут на управлении $u_1 = 0$, при котором исходная система (\ref{eq:main_system}) имеет только тождественно нулевое решение, не удовлетворяющее целевому множеству ни при одном выборе параметров. Для случая со вторым типом ограничений ($u_1 \in \R$) можно рассуждать аналогично.
+\end{remark}
+
+Также видно, что вторые уравнения исходной и сопряженной систем (\ref{eq:main_system}, \ref{eq:auxiliary_system}) зависят только от одной переменной, поэтому мы можем найти их вид, применив формулу Коши. Можно проверить, что фундаментальная матрица имеет вид\footnote{в данном случае фундаментальная матрица имеет размер $1 \times 1$}
+$$
+        X(t, \tau) = e^{-\int\limits_\tau^t (1 + u_2(s)) ds}.
+$$
+Тогда, учитывая начальные условия, получаем искомые выражения:
+\begin{equation} \label{eq:x_2}
+        x_2(t) = \bigintss\limits_0^t \exp\left\{-\int\limits_\tau^t (1 + u(s))\,ds\right\} u_1(\tau)\,d\tau,
+\end{equation}
+\begin{equation} \label{eq:psi_2}
+        \psi_2(t) = e^{\,\int\limits_0^t (1 + u(s))\,ds}\psi_2^0 - \bigintss\limits_0^T \exp\left\{\,\int\limits_\tau^t (1 + u(s))\,ds\right\} \psi_1^0\,d\tau,
+\end{equation}
+где $\psi_2^0 = \psi_2(0)$.

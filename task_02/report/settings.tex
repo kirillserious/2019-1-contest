@@ -1,0 +1,39 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Внешние пакеты
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[main = russian, english]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{indentfirst}
+\usepackage{amsthm}                  % Красивый внешний вид теорем, определений и доказательств
+% \usepackage[integrals]{wasysym}    % Делает интегралы прямыми, но некрасивыми
+\usepackage{bigints}                 % Позволяет делать большущие интегралы
+
+% Красивый внешний вид теорем, определений и доказательств
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}
+
+\theoremstyle{plane}
+\newtheorem{theorem}{Теорема}
+\newtheorem{lemma}{Лемма}
+\newtheorem{assertion}{Утверждение}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}
+
+\renewcommand*{\proofname}{Доказательство}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% Переопределение математических штук
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\T}{\mathrm{T}}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\const}{const}

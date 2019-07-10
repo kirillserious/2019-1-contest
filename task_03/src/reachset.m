@@ -77,7 +77,6 @@ function [xes, switches] = reachset(alpha, t, mode)
         p2 = plot([NaN, NaN], '*');
         ax.ColorOrderIndex = 3;
         p3 = plot([NaN, NaN], '*');
-        %legend('', 'Оптимальные траектории', 'Точки переключения', 'Конечные точки');
         legend([p1, p2, p3], {'Оптимальные траектории', 'Точки переключения', 'Конечные точки'});
         hold off;
     end
@@ -158,11 +157,17 @@ function [x_end, switches] = psi_switch(mode, t_start, t_end, x_start, psi_start
         else
             odefcn = @(t, x) main_system(t, x, -alpha);
         end
-        
+        lastwarn('');
         [x_times, xes] = ode45(odefcn, [t_start, t_end], x_start);
                 
         odefcn = @(t, psi) congugate_system(t, psi, xes, x_times); 
         [psi_times, psis, ~, ~, ~] = ode45(odefcn, x_times, psi_start, options);
+        
+        [warnMsg, ~] = lastwarn;
+        if ~isempty(warnMsg)
+            error('Одна из траекторий ушла в бесконечность.');
+        end
+        
         
         t_start = psi_times(end);
         t_start_ind = numel(psi_times);

@@ -1,0 +1,92 @@
+\subsection{Вспомогательные утверждения}
+
+В данном разделе мы докажем ряд утверждений, которые дадут нам представление о качественном поведении траекторий системы. Для начала ответим на вопрос, когда и в каком направлении \textit{тележка} начинает свое движение.
+
+\begin{assertion}
+        Если некоторое допустимое управление $u \in \Delta$ такое, что $u(t) = 0$ для всех точек $t \in [0, t_0]$, где $t_0 > 0$, то оно не является оптимальным.
+\end{assertion}
+
+\begin{proof}
+        Покажем, что существует управление $\hat u = [\hat u_1,\, u_2]^\T$ такое, что $J(\hat u) < J(u)$. По формуле Коши (\ref{eq:x_2}) имеем:
+        $$
+                x_1(T) = \bigints\limits_{t_0}^T\bigintss\limits_{t_0}^{\tau} \exp \left\{ -\bigintsss\limits_\xi^\tau(1 + u_2(s))\,ds\right\}u_1(\xi)\,d\xi\,d\tau = L,
+        $$
+        $$
+                x_2(T) = \bigintss\limits_{t_0}^T\exp\left\{-\bigintsss\limits_\tau^T(1+u_2(s))\,ds\right\}u_1(\tau)\,d\tau = \varepsilon_0 \leqslant \varepsilon.
+        $$
+        Положим $M$ некоторой константой из интервала $0 < M < 1$, конкретной вид которой мы установим ниже. Тогда возьмем
+        $$
+                \hat u_1(t) =
+                \begin{cases}
+                        M\,u_1(t+t_0), & \mbox{при $0\leqslant t\leqslant T - t_0$ }\\
+                        0, & \mbox{при $T-t_0<t\leqslant T$}.
+                \end{cases}
+        $$
+        и потребуем, чтобы построенное нами управление было допустимым, то есть чтобы $x_1(T;\,\hat u) = L$ и $x_2(T;\,\hat u) \leqslant \varepsilon$.
+
+        В силу линейности по $u_1$ формулы Коши $x_1(T-t_0;\,\hat u) = LM$, $x_2(T - t_0;\, \hat u) = \varepsilon_0M$. Выпишем формулу Коши на отрезке $T - t_0 \leqslant t \leqslant T$:
+        $$
+                x_1(t) = LM + \varepsilon_0M\bigintss_{T-t_0}^{\,t} \!\exp\left\{ -\bigintsss_{\,T-t_0}^{\,\tau} (u_2(s) + 1)\, ds \right\}\,d\tau,
+        $$
+        $$
+                x_2(t) = \varepsilon_0 M \exp\left\{ -\bigintsss_{\,T-t_0}^\tau (u_2(s) + 1)\, ds \right\}.
+        $$
+        Из условия $x_1(T) = L$ получаем, что нужно взять
+        $$
+                M = \frac{L}{L + \varepsilon_0\bigintss_{\,T-t_0}^{\,T}\exp\left\{-\bigintsss_{\,T-t_0}^{\,\tau}(u_2(s)+1)\,ds\right\}\,d\tau}.
+        $$
+        Видно, что при таком выборе, действительно $0 < M < 1$ и управление $\hat u$ является допустимым. При этом
+        $$
+                J(\hat u_1) = \int\limits_0^T (M^2u_1^2(t) + \alpha M|u_1(t)|)\,dt < \int\limits_0^T(u_1^2(t) +\alpha|u_1(t)|)\, dt = J(u_1),
+        $$
+        что и доказывает неоптимальность выбора такого $u$.
+\end{proof}
+
+В дальнейшем будем рассматривать решения нашей задачи в зависимости от различных наборов заданных параметров $L,\; T,\; \alpha,\; \varepsilon,\; k_1,\; k_2$. Предположим, что при наборе параметров задача имеет решение $u^*$. Тогда обозначим $J_*(L,\,T,\, \alpha,\,\varepsilon,\,k_1,\,k_2) = J(u^*)$.
+
+\begin{lemma}
+        Пусть $T_2 > T_1$, тогда $J_*(L,\,T_1,\, \alpha,\,\varepsilon,\,k_1,\,k_2) \geqslant J_*(L,\,T_2,\, \alpha,\,\varepsilon,\,k_1,\,k_2)$.
+\end{lemma}
+\begin{proof}
+        Очевидно, что если $J_*(L,\,T_1,\, \alpha,\,\varepsilon,\,k_1,\,k_2)$ достигается на управлении $u^*$, то управление
+        $$
+                \hat u(t) =
+                \begin{cases}
+                        0, & \mbox{при $0 \leqslant t < T_2 - T_1$}\\
+                        u^*(t - T_2 + T_1), & \mbox{при $T_2 - T_1 \leqslant t \leqslant T_2$}
+                \end{cases}
+        $$
+        является допустимым управлением, отвечающим случаю $T = T_2$. Утверждение леммы вытекает из соотношения
+        $$
+                J_*(L,\,T_1,\, \alpha,\,\varepsilon,\,k_1,\,k_2) = J(\hat u) \geqslant J_*(L,\,T_2,\, \alpha,\,\varepsilon,\,k_1,\,k_2).
+        $$
+\end{proof}
+
+\begin{lemma}
+        Пусть $L_2 > L_1$. Тогда $J_*(L_2,\,T,\, \alpha,\,\varepsilon,\,k_1,\,k_2) >
+        J_*(L_1,\,T,\, \alpha,\,\varepsilon,\,k_1,\,k_2).$
+\end{lemma}
+
+\begin{proof}
+        По формуле Коши имеем:
+        $$
+                x_1(T) = \bigints\limits_{0}^T\bigintss\limits_{0}^{\tau} \exp \left\{ -\bigintsss\limits_\xi^\tau(1 + u_2(s))\,ds\right\}u_1(\xi)\,d\xi\,d\tau = L_2,
+        $$
+        $$
+                x_2(T) = \bigintss\limits_{0}^T\exp\left\{-\bigintsss\limits_\tau^T(1+u_2(s))\,ds\right\}u_1(\tau)\,d\tau = \varepsilon_0 \leqslant \varepsilon.
+        $$
+        Обозначим $c = \frac{L_1}{L_2} < 1$. Положим $\hat u_1(t) = cu_1(t)$. При этом $x_1(T;\,\hat u) = L_1$, $x_2(T;\,\hat u) < \varepsilon$. Но тогда
+        $$
+                J_*(L_1,\,T,\, \alpha,\,\varepsilon,\,k_1,\,k_2) \leqslant J(\hat u) = \int\limits_0^T (c^2u_1^2 + \alpha c |u_1(t)|)\,dt < \int\limits_0^T(u_1^2(t) + \alpha|u_1(t)|)\,dt = J_*(L_2,\,T,\, \alpha,\,\varepsilon,\,k_1,\,k_2),
+        $$
+        что и требовалось показать.
+\end{proof}
+
+Применим эти рассуждения для выяснения поведения траектории в окрестностях концов отрезка $[0,\,L]$ при ограничениях второго типа, когда $u_1(t) \in \R$. Будем говорить, что на некотором непустом отрезке времени $[t_1,\,t_2]$ имеет место \textit{реверс}, если $x_2(t) < 0$ для каждой точки $t \in [t_1,\,t_2]$. С физической точки зрения, на этом отрезке времени тележка едет в обратном направлении.
+
+\begin{assertion}
+Если траектория начинается с реверса или заканчивается реверсом, то она не является оптимальной.
+\end{assertion}
+\begin{proof}
+        Пусть допустимое управление $u$ такого, что отвечающая ему траектория имеет реверс на отрезке $[0,\,t_0]$. Поскольку управление допустимо, то $t_0 < T$, иначе в $L > 0$ точка не попадает --- значит, в силу непрерывности $x_2(t)$, найдется такой момент времени $\hat t$, что $x_2(\hat t) = 0$. Обозначим через $t_1$ первый из таких моментов, когда $x_1(t_1)=-l,\;l>0$. 
+\end{proof}
