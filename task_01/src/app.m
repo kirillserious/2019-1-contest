@@ -110,9 +110,11 @@ classdef app < matlab.apps.AppBase
             gVec = [];
             app.Button_5.Enable = 'off';  
         end
-        function checkFinishButtonPushed(app, event)
-            msgbox('Здесь будет проверяться конечное множество на пустоту и бесконечность', ...
-                'Заглушка');
+        function transversButtonPushed(app, event)
+            transvers();
+        end
+        function checkIntersectButtonPushed(app, event)
+            isIntersect();
         end
     end
 
@@ -309,14 +311,15 @@ classdef app < matlab.apps.AppBase
             % Create Button_2
             app.Button_2 = uibutton(app.UIFigure, 'push');
             app.Button_2.Position = [12 273 300 22];
-            app.Button_2.Text = 'Проверить конечное множество';
-            app.Button_2.ButtonPushedFcn = createCallbackFcn(app, @checkFinishButtonPushed, true);
+            app.Button_2.Text = 'Погрешность УТ';
+            app.Button_2.ButtonPushedFcn = createCallbackFcn(app, @transversButtonPushed, true);
             
 
             % Create Button_3
             app.Button_3 = uibutton(app.UIFigure, 'push');
             app.Button_3.Position = [12 242 300 22];
             app.Button_3.Text = 'Проверить пересечение множеств';
+            app.Button_3.ButtonPushedFcn = createCallbackFcn(app, @checkIntersectButtonPushed, true);
 
             % Create Button_4
             app.Button_4 = uibutton(app.UIFigure, 'push');

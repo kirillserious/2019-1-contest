@@ -1,0 +1,31 @@
+% Находит крайние точки множества X_1
+
+function exts = find_ext_x1 (G, g)
+    exts = [];
+
+    m = size(G, 1);    
+    for i = 1 : m-1
+        for j = i+1 : m
+            % Проверим на непересечение
+            normal_i = transpose(G(i, :));
+            normal_j = transpose(G(j, :));
+            normal_i = normal_i ./ norm(normal_i);
+            normal_j = normal_j ./ norm(normal_j);
+            if (max(normal_i ~= normal_j)) && (max(normal_i ~= -normal_j))
+                A =  [G(i, :); G(j, :)];
+                b = -[g(i, 1); g(j, 1)];
+                x = A \ b
+                if (set_x1(x, G, g))
+                    % Проверим, не повторяется ли точка
+                    for k = 1:size(ext, 1)
+                    end
+                    exts = [exts; transpose(x)];
+                end
+            end
+        end
+    end
+    % Удалим повторяющиеся точки
+    m = size(exts, 1);
+    
+end
+

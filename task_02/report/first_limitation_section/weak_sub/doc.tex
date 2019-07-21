@@ -1,0 +1,50 @@
+\subsection{Режим слабого торможения}
+
+От момента времени $t_1$ до момента $T$ система будет описываться уравнениями:
+\begin{equation} \label{eq:firslim_weak_x2}
+        x_2(t) = x_2^1e^{(k_1+ 1)(t_1 - t)},
+\end{equation}
+\begin{equation} \label{eq:firslim_weak_x1}
+        x_1(t) = x_1^1 + \frac{x_2^1}{k_1+1}+\left(1 - e^{(k_1+ 1)(t_1 - t)}\right).
+\end{equation}
+Соотношение $x_2(T) = \varepsilon_0$ дает
+$$
+        x_2^1e^{(k_1+1)t_1} = \varepsilon_0e^{(k_1+1)T}.
+$$
+Из соотношения $x_1(T) = L$ получается
+$$
+        x_1^1 = L - \frac{x_2^1 - \varepsilon_0}{k_1 + 1}
+$$
+Теперь обозначим за $\eta = e^{(k_1+1)t_1}$:
+$$
+        x_1^1\eta = \eta\left(L+\frac{\varepsilon_0}{k_1 + 1}\right) - \frac{\varepsilon_0e^{(k_1 + 1)T}}{k_1 + 1}.
+$$
+Учитывая соотношение $A\eta + B = \frac{1}{2}$, выпишем условие $x_2(t_1) = x_2^1$:
+$$
+        A\sh((k_1+1)t_1) + \left(B - \frac{1}{2}\right)\left(1 - e^{-(k_1+1)t_1}\right) = x_2^1(k_1 + 1)
+$$
+$$
+        A\left(\frac{\eta^2-1}{2\eta} - \eta + 1\right) = x_2^1(k_1 + 1)
+$$
+$$
+        -A(\eta - 1)^2 = 2(k_1+1)\varepsilon_0e^{(k_1 + 1)T}
+$$
+С учетом полученного соотношения распишем условие $x_1(t)\eta = x_1^1\eta$:
+\begin{multline}
+        \left(\frac{A}{k_1 + 1}\cdot \frac{\eta + \frac1\eta}2 + \left(B - \frac12\right)\cdot\left(t_1 - \frac1{k_1+1}\cdot\frac{\eta - 1}{\eta}\right)\right) =\\=\frac{A\eta}{k_1 + 1}\left(\frac{\eta + \frac1\eta}{2(k_1+1)} - \eta t_1 + \frac{1 - \frac1\eta}{k_1+1}\right) =\\=\frac{\varepsilon_0e^{(k_1+1)T}}{k_1 + 1} \cdot \frac{2\eta^2\ln\eta - (\eta^2 + 2\eta - 1)}{(\eta - 1)^2}.
+\end{multline}
+Учитывая, что $t_1 = \frac1{k_1 + 1}\ln\eta$, сопоставим:
+\begin{equation}\label{eq:weak_find_eta}
+        \eta\left(L + \frac{\varepsilon_0}{k_1+1}\right) - \frac{\varepsilon_0e^{(k_1+1)T}}{k_1+1} = \varepsilon_0e^{(k_1+1)T}f(\eta),
+\end{equation}
+где $f(\eta) = \frac{2\eta^2\ln\eta - (\eta^2 + 2\eta - 1)}{(\eta-1)^2}$. Отметим, что функция $f(\eta)$ является безразмерной характеристикой режима, не зависящей от параметров $k_1,\,k_2,\,\alpha,\,T,\,L,\,\varepsilon$.
+
+Определим монотонность функции $f(\eta)$, посчитав её производную
+\begin{multline}
+f'(\eta) = \frac1{(\eta-1)^2}\left\{\left(4\eta\ln\eta + 2\eta\frac1\eta - 2\eta - 2\right)(\eta-1)^2 - 2(\eta-1)(2\eta^2\ln\eta - (\eta^2+2\eta-1))\right\} = \\ = \frac1{(\eta - 1)^3}( 4\eta^2\ln\eta - 4\eta\ln\eta-2\eta+2-4\eta^2\ln\eta+2\eta^2+4\eta-2) = \\ = \frac1{(\eta-1)^3}(2\eta^2 + 2\eta - 4\eta\ln\eta) = \\ = \frac\eta{(\eta-1)^3}(2\eta+2 -4\ln\eta) > 0,
+\end{multline}
+что доказывает строгое возрастание функции $f(\eta)$ на полуинтервале $[1;\,+\infty)$. Аналогично доказывается, что $f''(\eta) < 0$.
+
+Таким образом, геометрически (\ref{eq:weak_find_eta}) интерпретируется как пересечение прямой, образующей острый угол с осью абцисс, и функцией $C\cdot f(\eta)$, где $C$ --- константа. Ясно, что таких точек может быть не более двух.
+
+Зная $\eta$, мы однозначно находим $\psi_1^0$, $\psi_2^0$ и прочие параметры, необходимые для проверки условий $A < 0$, $t_1 < T$, $t_2 > T$.

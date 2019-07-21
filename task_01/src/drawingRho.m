@@ -1,5 +1,12 @@
-% Рисует множество по опорной функции
+%  Рисует ограниченное множество по опорной функции
+%  Arguments:
+%      rho    @(dir)->[value, point] -- опорная функция множества
+%      N      scalar                 -- число точек аппроксимации
+%      color  string = 'r'           -- цвет рисунка
 function drawingRho(rho, N, color)
+    if nargin < 3
+        color = 'r';
+    end
     N = N + 1;
     pointVec = zeros(N, 2);
     angle = linspace(0, 2* pi, N);
@@ -13,11 +20,7 @@ function drawingRho(rho, N, color)
     pointVec(isnan(pointVec)) = direction(isnan(pointVec)) .* maxVal;
     
     grid on;
-    if nargin < 3
-        fill([pointVec(:, 1); pointVec(1, 1)], [pointVec(:, 2); pointVec(1, 2)], 'r');
-    else
-        fill([pointVec(:, 1); pointVec(1, 1)], [pointVec(:, 2); pointVec(1, 2)], color);
-    end
+    fill([pointVec(:, 1); pointVec(1, 1)], [pointVec(:, 2); pointVec(1, 2)], color);
     hold off;
     
 end

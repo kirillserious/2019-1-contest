@@ -8,12 +8,14 @@ function utilsSetSettings()
     PsiPlace = 0;    
     
     global MostOptimalTime MostOptimalManagement ...
-        MostOptimalTimeManagement MostOptimalLine MostOptimalTimeLine;
+        MostOptimalTimeManagement MostOptimalLine MostOptimalTimeLine ...
+        MostOptimalLastPsi;
     
     MostOptimalTime = startT + MaxDeltaT;
     MostOptimalManagement = 0;
     MostOptimalTimeManagement = 0;
     MostOptimalLine = 0;
     MostOptimalTimeLine = 0;
+    MostOptimalLastPsi = 0;
 end
 

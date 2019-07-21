@@ -1,3 +1,4 @@
+% Уточняет результат
 function specify()
     global aMat bMat;
     % Рисуем начальное множество 
@@ -7,7 +8,8 @@ function specify()
     % Рисуем конечное множество
     global gMat gVec;
     hold on;
-    drawingRho(finishRhoFunc(gMat, gVec), 40, 'r');
+    exts = ext_x1();
+    drawingRho(@(dir)finishRho(dir, exts), 40, 'r');
     
     % Переменные для множества управлений
     global a b c;
@@ -27,6 +29,7 @@ function specify()
     optimalTimeManagement = 0;
     optimalLine = 0;
     optimalTimeLine = 0;
+    optimalPsi = 0;
     optimalIndex = -1;
     for i = 1:SplitNumber
         % Условие транверсальности на левом конце
@@ -39,12 +42,11 @@ function specify()
         management = zeros(n, 2);
         for j = 1:n
             psi = transpose(psiMat(j, :));
-            % ksi = B.T * psi 
             ksi = transpose(bMat(startT)) * psi; 
             [~, management(j, :)] = managementRho(ksi, a, b, c);
         end
         
-        options = odeset('Events', @odeEventFcn);
+        options = odeset('Events', @odeEventFcn, 'RelTol', 2.22045e-14);
         [timeLine, lineMat, ~, ~, ~] = ode45(@(t, x)xOdeFun(management, timeManagement, t, x), tspan, optimalX0, options); 
     
         if timeLine(end) < startT + MaxDeltaT
@@ -55,6 +57,7 @@ function specify()
                 optimalTimeManagement = timeManagement;
                 optimalLine = lineMat;
                 optimalTimeLine = timeLine;
+                optimalPsi = psiMat;
                 optimalIndex = i;
             end
         end
@@ -62,7 +65,8 @@ function specify()
     
     
     global MostOptimalTime MostOptimalManagement ...
-        MostOptimalTimeManagement MostOptimalLine MostOptimalTimeLine;
+        MostOptimalTimeManagement MostOptimalLine MostOptimalTimeLine ...
+        MostOptimalPsi;
     
     if (optimalIndex > 0)
         PsiPlace = PsiPlace - Delta + (optimalIndex-1) * (2*Delta/SplitNumber);
@@ -72,6 +76,7 @@ function specify()
         MostOptimalTimeManagement = optimalTimeManagement;
         MostOptimalLine = optimalLine;
         MostOptimalTimeLine = optimalTimeLine;
+        MostOptimalPsi = optimalPsi;
         optimalPlot = plot(optimalLine(:, 1), optimalLine(:,2), 'm');
         title(['Конечное время ' num2str(optimalTime)]);
     end
