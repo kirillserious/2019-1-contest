@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.7.10)  21 JUL 2019 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.7.10)  27 JUL 2019 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,7 +618,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./title_page/msu-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<title_page/msu-eps-converted-to.pdf, id=48, 187.70125pt x 101.37875pt>
+<title_page/msu-eps-converted-to.pdf, id=60, 187.70125pt x 101.37875pt>
 File: title_page/msu-eps-converted-to.pdf Graphic file (type pdf)
 <use title_page/msu-eps-converted-to.pdf>
 Package pdftex.def Info: title_page/msu-eps-converted-to.pdf  used on input lin
@@ -1106,151 +1106,174 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 [4
 
 
-] [5]
+]
+Package epstopdf Info: Source file: <support_functions/ext.eps>
+(epstopdf)                    date: 2019-07-27 17:52:42
+(epstopdf)                    size: 39506 bytes
+(epstopdf)             Output file: <support_functions/ext-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-07-27 17:54:44
+(epstopdf)                    size: 15340 bytes
+(epstopdf)             Command: <repstopdf --outfile=support_functions/ext-eps-
+converted-to.pdf support_functions/ext.eps>
+(epstopdf)             \includegraphics on input line 179.
+Package epstopdf Info: Output file is already uptodate.
+<support_functions/ext-eps-converted-to.pdf, id=127, 428.60126pt x 310.15875pt>
+
+File: support_functions/ext-eps-converted-to.pdf Graphic file (type pdf)
+<use support_functions/ext-eps-converted-to.pdf>
+Package pdftex.def Info: support_functions/ext-eps-converted-to.pdf  used on in
+put line 179.
+(pdftex.def)             Requested size: 221.32687pt x 160.16183pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 176.
+(hyperref)                removing `math shift' on input line 206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Omega' on input line 176.
+(hyperref)                removing `\Omega' on input line 206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 176.
+(hyperref)                removing `math shift' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRV' on input line 176.
+(hyperref)                removing `\CYRV' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 176.
+(hyperref)                removing `\cyrery' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 176.
+(hyperref)                removing `\cyrch' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 176.
+(hyperref)                removing `\cyri' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 176.
+(hyperref)                removing `\cyrs' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 176.
+(hyperref)                removing `\cyrl' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 176.
+(hyperref)                removing `\cyre' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 176.
+(hyperref)                removing `\cyrn' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 176.
+(hyperref)                removing `\cyri' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 176.
+(hyperref)                removing `\cyre' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 176.
+(hyperref)                removing `\cyro' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 176.
+(hyperref)                removing `\cyrp' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 176.
+(hyperref)                removing `\cyro' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 176.
+(hyperref)                removing `\cyrr' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 176.
+(hyperref)                removing `\cyrn' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 176.
+(hyperref)                removing `\cyro' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 176.
+(hyperref)                removing `\cyrishrt' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrf' on input line 176.
+(hyperref)                removing `\cyrf' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 176.
+(hyperref)                removing `\cyru' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 176.
+(hyperref)                removing `\cyrn' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 176.
+(hyperref)                removing `\cyrk' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrc' on input line 176.
+(hyperref)                removing `\cyrc' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 176.
+(hyperref)                removing `\cyri' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 176.
+(hyperref)                removing `\cyri' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 176.
+(hyperref)                removing `\cyrm' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 176.
+(hyperref)                removing `\cyrn' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 176.
+(hyperref)                removing `\cyro' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrzh' on input line 176.
+(hyperref)                removing `\cyrzh' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 176.
+(hyperref)                removing `\cyre' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 176.
+(hyperref)                removing `\cyrs' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 176.
+(hyperref)                removing `\cyrt' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 176.
+(hyperref)                removing `\cyrv' on input line 206.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 176.
+(hyperref)                removing `\cyra' on input line 206.
 
+[5]
 Package epstopdf Info: Source file: <support_functions/omega.eps>
 (epstopdf)                    date: 2019-07-15 12:56:02
 (epstopdf)                    size: 33510 bytes
@@ -1260,19 +1283,21 @@ df>
 (epstopdf)                    size: 11118 bytes
 (epstopdf)             Command: <repstopdf --outfile=support_functions/omega-ep
 s-converted-to.pdf support_functions/omega.eps>
-(epstopdf)             \includegraphics on input line 202.
+(epstopdf)             \includegraphics on input line 232.
 Package epstopdf Info: Output file is already uptodate.
-<support_functions/omega-eps-converted-to.pdf, id=114, 428.60126pt x 310.15875p
+<support_functions/omega-eps-converted-to.pdf, id=138, 428.60126pt x 310.15875p
 t>
 File: support_functions/omega-eps-converted-to.pdf Graphic file (type pdf)
 <use support_functions/omega-eps-converted-to.pdf>
 Package pdftex.def Info: support_functions/omega-eps-converted-to.pdf  used on 
-input line 202.
+input line 232.
 (pdftex.def)             Requested size: 221.32687pt x 160.16183pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6] [7 <./support_functions/omega-eps-converted-to.pdf>]) [8]
+[6 <./support_functions/ext-eps-converted-to.pdf>] [7 <./support_functions/omeg
+a-eps-converted-to.pdf>]) [8]
 \openout2 = `pmp/doc.aux'.
 
  (./pmp/doc.tex
@@ -1504,7 +1529,7 @@ Package epstopdf Info: Source file: <algorithm/transvers.eps>
 nverted-to.pdf algorithm/transvers.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
-<algorithm/transvers-eps-converted-to.pdf, id=148, 428.60126pt x 310.15875pt>
+<algorithm/transvers-eps-converted-to.pdf, id=174, 428.60126pt x 310.15875pt>
 File: algorithm/transvers-eps-converted-to.pdf Graphic file (type pdf)
 <use algorithm/transvers-eps-converted-to.pdf>
 Package pdftex.def Info: algorithm/transvers-eps-converted-to.pdf  used on inpu
@@ -1652,7 +1677,7 @@ Package epstopdf Info: Source file: <algorithm/glb-imp-1.eps>
 nverted-to.pdf algorithm/glb-imp-1.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
-<algorithm/glb-imp-1-eps-converted-to.pdf, id=165, 428.60126pt x 310.15875pt>
+<algorithm/glb-imp-1-eps-converted-to.pdf, id=190, 428.60126pt x 310.15875pt>
 File: algorithm/glb-imp-1-eps-converted-to.pdf Graphic file (type pdf)
 <use algorithm/glb-imp-1-eps-converted-to.pdf>
 Package pdftex.def Info: algorithm/glb-imp-1-eps-converted-to.pdf  used on inpu
@@ -1668,7 +1693,7 @@ Package epstopdf Info: Source file: <algorithm/glb-imp-2.eps>
 nverted-to.pdf algorithm/glb-imp-2.eps>
 (epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
-<algorithm/glb-imp-2-eps-converted-to.pdf, id=166, 428.60126pt x 310.15875pt>
+<algorithm/glb-imp-2-eps-converted-to.pdf, id=191, 428.60126pt x 310.15875pt>
 File: algorithm/glb-imp-2-eps-converted-to.pdf Graphic file (type pdf)
 <use algorithm/glb-imp-2-eps-converted-to.pdf>
 Package pdftex.def Info: algorithm/glb-imp-2-eps-converted-to.pdf  used on inpu
@@ -1685,7 +1710,7 @@ df>
 s-converted-to.pdf algorithm/improvement-1.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
-<algorithm/improvement-1-eps-converted-to.pdf, id=167, 428.60126pt x 310.15875p
+<algorithm/improvement-1-eps-converted-to.pdf, id=192, 428.60126pt x 310.15875p
 t>
 File: algorithm/improvement-1-eps-converted-to.pdf Graphic file (type pdf)
 <use algorithm/improvement-1-eps-converted-to.pdf>
@@ -1703,7 +1728,7 @@ df>
 s-converted-to.pdf algorithm/improvement-2.eps>
 (epstopdf)             \includegraphics on input line 62.
 Package epstopdf Info: Output file is already uptodate.
-<algorithm/improvement-2-eps-converted-to.pdf, id=168, 428.60126pt x 310.15875p
+<algorithm/improvement-2-eps-converted-to.pdf, id=193, 428.60126pt x 310.15875p
 t>
 File: algorithm/improvement-2-eps-converted-to.pdf Graphic file (type pdf)
 <use algorithm/improvement-2-eps-converted-to.pdf>
@@ -1915,189 +1940,862 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\cyrya' on input line 3.
 
-<program/app.png, id=208, 761.84625pt x 549.05125pt>
+<program/app.png, id=233, 761.84625pt x 549.05125pt>
 File: program/app.png Graphic file (type png)
 <use program/app.png>
 Package pdftex.def Info: program/app.png  used on input line 9.
 (pdftex.def)             Requested size: 341.43306pt x 246.06543pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 46.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 45.
+(hyperref)                removing `\cyrs' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 45.
+(hyperref)                removing `\cyrv' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 45.
+(hyperref)                removing `\cyre' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrshch' on input line 45.
+(hyperref)                removing `\cyrshch' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 45.
+(hyperref)                removing `\cyre' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 45.
+(hyperref)                removing `\cyrs' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 45.
+(hyperref)                removing `\cyrt' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 45.
+(hyperref)                removing `\cyrv' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 45.
+(hyperref)                removing `\cyre' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 45.
+(hyperref)                removing `\cyrn' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 45.
+(hyperref)                removing `\cyrn' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 45.
+(hyperref)                removing `\cyrery' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 45.
+(hyperref)                removing `\cyrm' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 45.
+(hyperref)                removing `\cyri' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 45.
+(hyperref)                removing `\cyrs' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 45.
+(hyperref)                removing `\cyro' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrb' on input line 45.
+(hyperref)                removing `\cyrb' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 45.
+(hyperref)                removing `\cyrs' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 45.
+(hyperref)                removing `\cyrt' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 45.
+(hyperref)                removing `\cyrv' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 45.
+(hyperref)                removing `\cyre' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 45.
+(hyperref)                removing `\cyrn' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 45.
+(hyperref)                removing `\cyrn' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 45.
+(hyperref)                removing `\cyrery' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 45.
+(hyperref)                removing `\cyrm' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 45.
+(hyperref)                removing `\cyri' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrz' on input line 45.
+(hyperref)                removing `\cyrz' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 45.
+(hyperref)                removing `\cyrn' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 45.
+(hyperref)                removing `\cyra' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrch' on input line 45.
+(hyperref)                removing `\cyrch' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 45.
+(hyperref)                removing `\cyre' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 45.
+(hyperref)                removing `\cyrn' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 45.
+(hyperref)                removing `\cyri' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrya' on input line 45.
+(hyperref)                removing `\cyrya' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 45.
+(hyperref)                removing `\cyrm' on input line 46.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 45.
+(hyperref)                removing `\cyri' on input line 46.
 
-) [13
+[13
 
 
- <./program/app.png>] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
- [15
+ <./program/app.png>]
+Package epstopdf Info: Source file: <program/real-tr.eps>
+(epstopdf)                    date: 2019-07-25 21:01:09
+(epstopdf)                    size: 126418 bytes
+(epstopdf)             Output file: <program/real-tr-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-25 21:11:56
+(epstopdf)                    size: 41966 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/real-tr-eps-conver
+ted-to.pdf program/real-tr.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<program/real-tr-eps-converted-to.pdf, id=242, 428.60126pt x 310.15875pt>
+File: program/real-tr-eps-converted-to.pdf Graphic file (type pdf)
+<use program/real-tr-eps-converted-to.pdf>
+Package pdftex.def Info: program/real-tr-eps-converted-to.pdf  used on input li
+ne 58.
+(pdftex.def)             Requested size: 341.43306pt x 247.08142pt.
+Package epstopdf Info: Source file: <program/real-control.eps>
+(epstopdf)                    date: 2019-07-25 21:02:18
+(epstopdf)                    size: 29504 bytes
+(epstopdf)             Output file: <program/real-control-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2019-07-25 21:11:57
+(epstopdf)                    size: 9462 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/real-control-eps-c
+onverted-to.pdf program/real-control.eps>
+(epstopdf)             \includegraphics on input line 65.
+Package epstopdf Info: Output file is already uptodate.
+<program/real-control-eps-converted-to.pdf, id=245, 421.575pt x 315.1775pt>
+File: program/real-control-eps-converted-to.pdf Graphic file (type pdf)
+<use program/real-control-eps-converted-to.pdf>
+Package pdftex.def Info: program/real-control-eps-converted-to.pdf  used on inp
+ut line 65.
+(pdftex.def)             Requested size: 199.16928pt x 148.90291pt.
+Package epstopdf Info: Source file: <program/real-traectory.eps>
+(epstopdf)                    date: 2019-07-25 21:03:11
+(epstopdf)                    size: 28728 bytes
+(epstopdf)             Output file: <program/real-traectory-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2019-07-25 21:11:57
+(epstopdf)                    size: 9802 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/real-traectory-eps
+-converted-to.pdf program/real-traectory.eps>
+(epstopdf)             \includegraphics on input line 68.
+Package epstopdf Info: Output file is already uptodate.
+<program/real-traectory-eps-converted-to.pdf, id=246, 428.60126pt x 310.15875pt
+>
+File: program/real-traectory-eps-converted-to.pdf Graphic file (type pdf)
+<use program/real-traectory-eps-converted-to.pdf>
+Package pdftex.def Info: program/real-traectory-eps-converted-to.pdf  used on i
+nput line 68.
+(pdftex.def)             Requested size: 199.16928pt x 144.12767pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrk' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrp' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrl' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrk' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrery' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrb' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrery' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrz' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrch' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrya' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 73.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 73.
+
+[14 <./program/real-tr-eps-converted-to.pdf> <./program/real-control-eps-conver
+ted-to.pdf> <./program/real-traectory-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <program/complex-tr.eps>
+(epstopdf)                    date: 2019-07-25 21:16:53
+(epstopdf)                    size: 102355 bytes
+(epstopdf)             Output file: <program/complex-tr-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-25 21:28:48
+(epstopdf)                    size: 35741 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/complex-tr-eps-con
+verted-to.pdf program/complex-tr.eps>
+(epstopdf)             \includegraphics on input line 85.
+Package epstopdf Info: Output file is already uptodate.
+<program/complex-tr-eps-converted-to.pdf, id=271, 428.60126pt x 310.15875pt>
+File: program/complex-tr-eps-converted-to.pdf Graphic file (type pdf)
+<use program/complex-tr-eps-converted-to.pdf>
+Package pdftex.def Info: program/complex-tr-eps-converted-to.pdf  used on input
+ line 85.
+(pdftex.def)             Requested size: 341.43306pt x 247.08142pt.
+Package epstopdf Info: Source file: <program/complex-control.eps>
+(epstopdf)                    date: 2019-07-25 21:17:35
+(epstopdf)                    size: 30909 bytes
+(epstopdf)             Output file: <program/complex-control-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-07-25 21:28:49
+(epstopdf)                    size: 9974 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/complex-control-ep
+s-converted-to.pdf program/complex-control.eps>
+(epstopdf)             \includegraphics on input line 92.
+Package epstopdf Info: Output file is already uptodate.
+<program/complex-control-eps-converted-to.pdf, id=274, 421.575pt x 315.1775pt>
+File: program/complex-control-eps-converted-to.pdf Graphic file (type pdf)
+<use program/complex-control-eps-converted-to.pdf>
+Package pdftex.def Info: program/complex-control-eps-converted-to.pdf  used on 
+input line 92.
+(pdftex.def)             Requested size: 199.16928pt x 148.90291pt.
+Package epstopdf Info: Source file: <program/complex-traectory.eps>
+(epstopdf)                    date: 2019-07-25 21:17:59
+(epstopdf)                    size: 30134 bytes
+(epstopdf)             Output file: <program/complex-traectory-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2019-07-25 21:28:49
+(epstopdf)                    size: 10013 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/complex-traectory-
+eps-converted-to.pdf program/complex-traectory.eps>
+(epstopdf)             \includegraphics on input line 95.
+Package epstopdf Info: Output file is already uptodate.
+<program/complex-traectory-eps-converted-to.pdf, id=275, 428.60126pt x 310.1587
+5pt>
+File: program/complex-traectory-eps-converted-to.pdf Graphic file (type pdf)
+<use program/complex-traectory-eps-converted-to.pdf>
+Package pdftex.def Info: program/complex-traectory-eps-converted-to.pdf  used o
+n input line 95.
+(pdftex.def)             Requested size: 199.16928pt x 144.12767pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrery' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrzh' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrd' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 100.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 100.
+
+[15 <./program/complex-tr-eps-converted-to.pdf> <./program/complex-control-eps-
+converted-to.pdf> <./program/complex-traectory-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <program/v-tr.eps>
+(epstopdf)                    date: 2019-07-25 21:37:55
+(epstopdf)                    size: 112612 bytes
+(epstopdf)             Output file: <program/v-tr-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-25 21:41:01
+(epstopdf)                    size: 38082 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/v-tr-eps-converted
+-to.pdf program/v-tr.eps>
+(epstopdf)             \includegraphics on input line 112.
+Package epstopdf Info: Output file is already uptodate.
+<program/v-tr-eps-converted-to.pdf, id=300, 428.60126pt x 310.15875pt>
+File: program/v-tr-eps-converted-to.pdf Graphic file (type pdf)
+<use program/v-tr-eps-converted-to.pdf>
+Package pdftex.def Info: program/v-tr-eps-converted-to.pdf  used on input line 
+112.
+(pdftex.def)             Requested size: 341.43306pt x 247.08142pt.
+Package epstopdf Info: Source file: <program/v-control.eps>
+(epstopdf)                    date: 2019-07-25 21:38:25
+(epstopdf)                    size: 30400 bytes
+(epstopdf)             Output file: <program/v-control-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-25 21:41:01
+(epstopdf)                    size: 9988 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/v-control-eps-conv
+erted-to.pdf program/v-control.eps>
+(epstopdf)             \includegraphics on input line 119.
+Package epstopdf Info: Output file is already uptodate.
+<program/v-control-eps-converted-to.pdf, id=303, 414.54875pt x 320.19624pt>
+File: program/v-control-eps-converted-to.pdf Graphic file (type pdf)
+<use program/v-control-eps-converted-to.pdf>
+Package pdftex.def Info: program/v-control-eps-converted-to.pdf  used on input 
+line 119.
+(pdftex.def)             Requested size: 199.16928pt x 153.83412pt.
+Package epstopdf Info: Source file: <program/v-traectory.eps>
+(epstopdf)                    date: 2019-07-25 21:38:50
+(epstopdf)                    size: 31921 bytes
+(epstopdf)             Output file: <program/v-traectory-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-25 21:41:02
+(epstopdf)                    size: 9924 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/v-traectory-eps-co
+nverted-to.pdf program/v-traectory.eps>
+(epstopdf)             \includegraphics on input line 122.
+Package epstopdf Info: Output file is already uptodate.
+<program/v-traectory-eps-converted-to.pdf, id=304, 428.60126pt x 310.15875pt>
+File: program/v-traectory-eps-converted-to.pdf Graphic file (type pdf)
+<use program/v-traectory-eps-converted-to.pdf>
+Package pdftex.def Info: program/v-traectory-eps-converted-to.pdf  used on inpu
+t line 122.
+(pdftex.def)             Requested size: 199.16928pt x 144.12767pt.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\CYRO' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyru' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrp' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrery' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrishrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrz' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrn' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrb' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrery' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrd' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrishrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrya' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrp' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyra' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrr' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyro' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrv' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyri' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrs' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrt' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyre' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrm' on input line 128.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\cyrery' on input line 128.
+
+[16 <./program/v-tr-eps-converted-to.pdf> <./program/v-control-eps-converted-to
+.pdf> <./program/v-traectory-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <program/t8n7.eps>
+(epstopdf)                    date: 2019-07-27 11:28:30
+(epstopdf)                    size: 104024 bytes
+(epstopdf)             Output file: <program/t8n7-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-27 11:58:04
+(epstopdf)                    size: 39651 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/t8n7-eps-converted
+-to.pdf program/t8n7.eps>
+(epstopdf)             \includegraphics on input line 172.
+Package epstopdf Info: Output file is already uptodate.
+<program/t8n7-eps-converted-to.pdf, id=330, 428.60126pt x 310.15875pt>
+File: program/t8n7-eps-converted-to.pdf Graphic file (type pdf)
+<use program/t8n7-eps-converted-to.pdf>
+Package pdftex.def Info: program/t8n7-eps-converted-to.pdf  used on input line 
+172.
+(pdftex.def)             Requested size: 199.16928pt x 144.12767pt.
+Package epstopdf Info: Source file: <program/t8n6.eps>
+(epstopdf)                    date: 2019-07-27 11:34:32
+(epstopdf)                    size: 100796 bytes
+(epstopdf)             Output file: <program/t8n6-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-07-27 11:58:05
+(epstopdf)                    size: 37423 bytes
+(epstopdf)             Command: <repstopdf --outfile=program/t8n6-eps-converted
+-to.pdf program/t8n6.eps>
+(epstopdf)             \includegraphics on input line 175.
+Package epstopdf Info: Output file is already uptodate.
+<program/t8n6-eps-converted-to.pdf, id=331, 428.60126pt x 310.15875pt>
+File: program/t8n6-eps-converted-to.pdf Graphic file (type pdf)
+<use program/t8n6-eps-converted-to.pdf>
+Package pdftex.def Info: program/t8n6-eps-converted-to.pdf  used on input line 
+175.
+(pdftex.def)             Requested size: 199.16928pt x 144.12767pt.
+) [17 <./program/t8n7-eps-converted-to.pdf> <./program/t8n6-eps-converted-to.pd
+f>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
+ [18
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
- (./doc.aux (./title_page/doc.aux)
-(./task.aux) (./support_functions/doc.aux) (./pmp/doc.aux) (./algorithm/doc.aux
-) (./program/doc.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
+ (./doc.aux
+(./title_page/doc.aux) (./task.aux) (./support_functions/doc.aux)
+(./pmp/doc.aux) (./algorithm/doc.aux) (./program/doc.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 17.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: D93BDC447BCAB1D51FF439C360A3FEAA;552.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16.
+(rerunfilecheck)             Checksum: 518191FB6C7E16DF5283B2B4C16875F4;731.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  ) 
 Here is how much of TeX's memory you used:
- 8632 strings out of 492615
- 125547 string characters out of 6131390
- 231812 words of memory out of 5000000
- 12309 multiletter control sequences out of 15000+600000
+ 8714 strings out of 492615
+ 128400 string characters out of 6131390
+ 234057 words of memory out of 5000000
+ 12363 multiletter control sequences out of 15000+600000
  19674 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,41p,1045b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,18n,42p,1712b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
@@ -2119,10 +2817,10 @@ f/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfti1200.pfb>
-Output written on doc.pdf (15 pages, 450332 bytes).
+Output written on doc.pdf (18 pages, 690450 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 446 PDF objects out of 1000 (max. 8388607)
+ 351 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

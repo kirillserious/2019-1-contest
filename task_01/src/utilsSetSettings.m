@@ -3,7 +3,7 @@ function utilsSetSettings()
     global startT MaxDeltaT SplitNumber Delta PsiPlace;
     
     MaxDeltaT = 1;
-    SplitNumber = 5;
+    SplitNumber = 10;
     Delta = pi;
     PsiPlace = 0;    
     
@@ -17,5 +17,11 @@ function utilsSetSettings()
     MostOptimalLine = 0;
     MostOptimalTimeLine = 0;
     MostOptimalLastPsi = 0;
+    
+    global SpecifyIsFirstUsage SpecifyFigure SpecifiedStartPsis ...
+        SpecifyIsOptimalExist;
+    SpecifyIsOptimalExist = 0;
+    SpecifyIsFirstUsage = 1;
+    SpecifiedStartPsis = [0 0];
 end
 

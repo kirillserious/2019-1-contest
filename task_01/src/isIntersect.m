@@ -2,7 +2,7 @@
 function is = isIntersect()
     is = 0;
 
-    exts = ext_x1();
+    exts = finishExt();
     for i = 1:size(exts, 1)
         if startSet(exts(i,:)')
             is = 1;
@@ -10,16 +10,32 @@ function is = isIntersect()
     end
     
     global r p;
+    
     for i = linspace(0, 2*pi, 20)
         dir = [sin(i); cos(i)];
-        point = r * dir + p; 
+        
+        
+        point = r .* dir + p';
+        
         if finishSet(point)
             is = 1;
         end
     end
     
     if is
-        msgbox('Множества пересекаются');
+        figure('Name', 'Пересечение множеств');
+        i = linspace(0, 2*pi, 40);
+        i = [sin(i'), cos(i')];
+        i = [r .* i(:,1) + p(1), r .* i(:, 2) + p(2)];
+        plot(i(:, 1), i(:, 2), 'g');
+        hold on;
+        drawFinishSet(p(1) - r - 5, p(2) - r - 5, p(1) + r + 5, ... 
+                p(2) + r + 5, 'as_line');
+        axis([p(1) - r - 4, p(1) + r + 4, p(2) - r - 4, ... 
+                p(2) + r + 4]);
+        grid on;
+        legend('Граница начального множества', 'Граница целевого множества');
+        title('Множества пересекаются');
     else
         msgbox('Множества не пересекаются');
     end

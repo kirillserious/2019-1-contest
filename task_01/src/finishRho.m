@@ -1,5 +1,5 @@
 function [value, point] = finishRho(l, exts, eps)
-    if nargin < 5
+    if nargin < 3
         eps = 0.001;
     end
     
@@ -9,7 +9,7 @@ function [value, point] = finishRho(l, exts, eps)
         return
     end
     [value, index] = max(exts(:, 1) .* l(1) + exts(:, 2) .* l(2));
-    if set_x1(exts(index, :)' + eps*l)
+    if finishSet(exts(index, :)' + eps*l, eps)
         value = nan;
         point = nan;
     else

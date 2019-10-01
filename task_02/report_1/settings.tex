@@ -1,0 +1,67 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Внешние пакеты
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{a4wide}
+\usepackage[utf8]{inputenc}
+\usepackage[main = russian, english]{babel}
+\usepackage[pdftex]{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{indentfirst}
+\usepackage{amsthm}                  % Красивый внешний вид теорем, определений и доказательств
+% \usepackage[integrals]{wasysym}    % Делает интегралы прямыми, но некрасивыми
+\usepackage{bigints}                 % Позволяет делать большущие интегралы
+
+% Красивый внешний вид теорем, определений и доказательств
+\newtheoremstyle{def}
+        {\topsep}
+        {\topsep}
+        {\normalfont}
+        {\parindent}
+        {\bfseries}
+        {.}
+        {.5em}
+        {}
+\theoremstyle{def}
+\newtheorem{definition}{Определение}
+
+\newtheoremstyle{th}
+        {\topsep}
+        {\topsep}
+        {\itshape}
+        {\parindent}
+        {\bfseries}
+        {.}
+        {.5em}
+        {}
+\theoremstyle{th}
+\newtheorem{theorem}{Теорема}
+\newtheorem{lemma}{Лемма}
+\newtheorem{assertion}{Утверждение}[subsection]
+
+\newtheoremstyle{rem}
+        {0.5\topsep}
+        {0.5\topsep}
+        {\normalfont}
+        {\parindent}
+        {\itshape}
+        {.}
+        {.5em}
+        {}
+\theoremstyle{rem}
+\newtheorem{remark}{Замечание}
+
+% Новое доказательство
+\renewenvironment{proof}{\parД о к а з а т е л ь с т в о.}{\hfill$\blacksquare$}
+
+% Переопределение математических штук
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\T}{\mathrm{T}}
+\newcommand{\X}{\mathcal{X}}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\const}{const}

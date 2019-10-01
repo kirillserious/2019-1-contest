@@ -43,7 +43,7 @@ classdef app < matlab.apps.AppBase
 
     methods (Access = private)
 
-        % Button pushed function: changeButton
+        % <<Изменить>>
         function changeButtonPushed(app, event)
                 global a b c r p ...
                     a11Str a12Str a21Str a22Str ...
@@ -64,8 +64,11 @@ classdef app < matlab.apps.AppBase
                 b22Str = app.b22EditField.Value;
                 utilsSetABSymb();
                 app.Button_5.Enable = 'off';
+                app.Button_2.Enable = 'off';
+                app.Button_4.Enable = 'off';
         end
         
+        %    <<К стандартным>>
         function defaultButtonPushed(app, event)
            utilsSetStandartValues();
            utilsSetABSymb();
@@ -88,14 +91,31 @@ classdef app < matlab.apps.AppBase
            app.bEditField.Value = b;
            app.cEditField.Value = c;
            app.Button_5.Enable = 'off';
+           app.Button_2.Enable = 'off';
+           app.Button_4.Enable = 'off';
         end
+        
+        %    <<Уточнить результат>>
         function specifyButtonPushed(app, event)
             specify();
-            app.Button_5.Enable = 'on';
+            
+            global SpecifyIsOptimalExist;
+            if SpecifyIsOptimalExist
+                improvement('local');
+                app.Button_5.Enable = 'on';
+                app.Button_2.Enable = 'on';
+            else
+                improvement('global');
+            end
+            
         end 
+        
+        %    <<Вывод результата>>
         function outputButtonPushed(app, event)
             output();
         end
+        
+        %    <<Добавить>>
         function addGButtonPushed(app, event)
             global gMat gVec;
             utilsSetSettings();
@@ -103,6 +123,8 @@ classdef app < matlab.apps.AppBase
             gVec = [gVec; app.gEditField.Value];
             app.Button_5.Enable = 'off';         
         end
+        
+        %    <<Сбросить>>
         function refreshGButtonPushed(app, event)
             global gMat gVec;
             utilsSetSettings();
@@ -110,11 +132,22 @@ classdef app < matlab.apps.AppBase
             gVec = [];
             app.Button_5.Enable = 'off';  
         end
+        
+        %    <<Погрешность УТ>>
         function transversButtonPushed(app, event)
             transvers();
         end
+        
+        %    <<Проверить пересечение множеств>>
         function checkIntersectButtonPushed(app, event)
-            isIntersect();
+            global gMat;
+            if size(gMat, 1) < 1
+                msgbox("Матрица G не задана.")
+                return
+            end
+            if ~isIntersect()
+                app.Button_4.Enable = 'on';
+            end
         end
     end
 
@@ -195,7 +228,9 @@ classdef app < matlab.apps.AppBase
             app.b21EditField = uieditfield(app.BtPanel, 'text');
             app.b21EditField.Position = [7 9 66 22];
             app.b21EditField.Value = b21Str;
-
+            
+            % Create 
+            
             % Create X0Panel
             app.X0Panel = uipanel(app.Panel);
             app.X0Panel.Title = 'Множество X0';
@@ -310,23 +345,24 @@ classdef app < matlab.apps.AppBase
             
             % Create Button_2
             app.Button_2 = uibutton(app.UIFigure, 'push');
-            app.Button_2.Position = [12 273 300 22];
+            app.Button_2.Position = [12 210 300 22];
             app.Button_2.Text = 'Погрешность УТ';
             app.Button_2.ButtonPushedFcn = createCallbackFcn(app, @transversButtonPushed, true);
-            
+            app.Button_2.Enable = 'off';
 
             % Create Button_3
             app.Button_3 = uibutton(app.UIFigure, 'push');
-            app.Button_3.Position = [12 242 300 22];
+            app.Button_3.Position = [12 273 300 22];
             app.Button_3.Text = 'Проверить пересечение множеств';
             app.Button_3.ButtonPushedFcn = createCallbackFcn(app, @checkIntersectButtonPushed, true);
-
+            
+            
             % Create Button_4
             app.Button_4 = uibutton(app.UIFigure, 'push');
-            app.Button_4.Position = [12 210 300 22];
+            app.Button_4.Position = [12 242 300 22];
             app.Button_4.Text = 'Уточнить результат';
             app.Button_4.ButtonPushedFcn = createCallbackFcn(app, @specifyButtonPushed, true);
-            
+            app.Button_4.Enable = 'off';
 
             % Create Button_5
             app.Button_5 = uibutton(app.UIFigure, 'push');
